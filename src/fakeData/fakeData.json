@@ -1,0 +1,21 @@
+
+[
+    {
+        "id": 0,
+        "title": "Bike",
+        "image": "https://i.ibb.co/QjSkjsC/bike1.png",
+        "location":"sylhet",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "price": 453
+    },
+    {
+        "id": 1,
+        "title": "Bike",
+        "image": "https://i.ibb.co/QjSkjsC/bike1.png",
+        "location":"sylhet",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "price": 453
+    }
+]

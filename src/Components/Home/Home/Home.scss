@@ -1,0 +1,21 @@
+.main-container {
+    span {
+        color: blueviolet;
+
+        h1 {
+            color: red;
+
+
+            &::before {
+                content: '';
+                width: 14px;
+                height: 14px;
+                border-top: 4px solid green;
+            }
+
+
+        }
+
+       
+    }
+}
