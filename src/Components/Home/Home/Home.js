@@ -1,15 +1,21 @@
 import React from 'react';
+import Discover from '../Discover/Discover';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
+import Navbar from '../Navbar/Navbar';
+import Service from '../Service/Service';
+import Testimonials from '../Testimonials/Testimonials';
 import './Home.scss'
-import { GrLocation } from 'react-icons/gr';
 
 const Home = () => {
     return (
-        <div className='main-container'>
-           <span>
-mamaun
-           <h1>This Resido</h1>
-           </span>
-          
+        <div>
+            <Navbar/>
+            <Header/>
+            <Discover/>
+            <Testimonials/>
+            <Service/>
+            <Footer/>
         </div>
     );
 };

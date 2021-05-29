@@ -3,16 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
+    "react-chrono": "^1.10.0",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
+<<<<<<< HEAD
+=======
+    "react-multi-carousel": "^2.6.3",
+>>>>>>> e132ad19b5899d7498dfa564123f5b77ca5589dd
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-vis": "^1.11.7",
     "sass": "^1.34.0",
     "web-vitals": "^1.1.2"
   },

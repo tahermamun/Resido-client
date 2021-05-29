@@ -1,8 +1,6 @@
-
 [
     {
-        "id": 0,
-        "title": "Bike",
+        "title": "Washington Avenue",
         "image": "https://i.ibb.co/QjSkjsC/bike1.png",
         "location":"sylhet",
         "bedrooms": 4,
@@ -10,10 +8,41 @@
         "price": 453
     },
     {
-        "id": 1,
-        "title": "Bike",
+        "title": "Family Apartment Three",
+        "image": "https://i.ibb.co/QjSkjsC/bike1.png",
+        "location":"Dhaka",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "price": 453
+    },
+    {
+        "title": "Gorgeous House",
+        "image": "https://i.ibb.co/QjSkjsC/bike1.png",
+        "location":"Rajshahi",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "price": 453
+    },
+    {
+        "title": "Washington Avenue",
         "image": "https://i.ibb.co/QjSkjsC/bike1.png",
         "location":"sylhet",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "price": 453
+    },
+    {
+        "title": "Family Apartment Three",
+        "image": "https://i.ibb.co/QjSkjsC/bike1.png",
+        "location":"Dhaka",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "price": 453
+    },
+    {
+        "title": "Gorgeous House",
+        "image": "https://i.ibb.co/QjSkjsC/bike1.png",
+        "location":"Rajshahi",
         "bedrooms": 4,
         "bathrooms": 3,
         "price": 453

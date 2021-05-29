@@ -1,0 +1,25 @@
+.Testimonials {
+    background-color: #F4F9FD;
+    .TestimonialsHeader {
+        
+        position: relative;
+       .title {
+           font-size: 3rem;
+           color: #fff;
+       }
+       .sub-title {
+           font-size: 20px;
+           font-weight: 900;
+           margin: 0;
+           padding: 0;
+           &::before {
+               content: "''";
+               position: absolute;
+               top: 25px;
+               left: 50%;
+               color: #525252;
+               font-size: 50px;
+           }
+       }
+    }
+}
