@@ -1,0 +1,140 @@
+.HeaderMain {
+    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.7)), url("../../../img/Rectangle\ 13.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+
+    .headerBox {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bolder;
+
+        .find {
+            color: #3fb9be;
+            font-style: italic;
+            font-weight: lighter;
+        }
+        button {
+            text-transform: uppercase;
+            border: none;
+            background-color: #3fb9be;
+            padding: 10px 15px;
+            font-size: 10px;
+            color: white;
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+        .HeaderLink {
+            margin-top: 20%;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+            color: white;
+            &:hover {
+                color: #3fb9be;
+                cursor: pointer;
+                animation-name: bounce;
+                -moz-animation-name: bounce;
+            }
+        }
+        @keyframes bounce {
+            0%,
+            100%,
+            20%,
+            50%,
+            80% {
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+            }
+            40% {
+                -webkit-transform: translateY(-30px);
+                -ms-transform: translateY(-30px);
+                transform: translateY(-30px);
+            }
+            60% {
+                -webkit-transform: translateY(-15px);
+                -ms-transform: translateY(-15px);
+                transform: translateY(-15px);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .HeaderMain {
+        .headerBox {
+            .find {
+                color: #3fb9be;
+                font-style: italic;
+                font-weight: lighter;
+            }
+            h2 {
+            }
+            button {
+                text-transform: uppercase;
+                border: none;
+                background-color: #3fb9be;
+                padding: 10px 15px;
+                font-size: 10px;
+                color: white;
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .HeaderMain {
+        .headerBox {
+            width: 90%;
+            .find {
+                color: #3fb9be;
+                font-style: italic;
+                font-weight: lighter;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .HeaderMain {
+        .headerBox {
+            width: 50%;
+            h2 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .HeaderMain {
+        .headerBox {
+            width: 30%;
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.DiscoverApartment {
+    .card {
+        .cardImage {
+            height: 250px;
+        }
+        .cardBody {
+            .cardFooter {
+                display: flex;
+                justify-content: space-between;
+                hr {
+                    margin: 0px;
+                    padding: 0px;
+                }
+                p {
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 30px;
+                    color: #3fb9be;
+                }
+                button {
+                    width: 157px;
+                    height: 50px;
+                    background-color: #3fb9be;
+                    color: white;
+                    border: none;
+                    line-height: 30px;
+                    &:hover {
+                        transition: 0.5s;
+                        background-color: #13162b;
+                    }
+                }
+            }
+        }
+    }
+}
