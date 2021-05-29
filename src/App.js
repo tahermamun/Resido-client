@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from './Components/Home/Home/Home';
+import Login from './Login/Login';
 
 const App = () => {
   return (
@@ -14,7 +15,15 @@ const App = () => {
       <Switch>
         <Route path='/'>
           <Home></Home>
+          
+         
         </Route>
+
+        <Route path="/login">
+        <Login></Login>
+
+        </Route>
+
       </Switch>
     </Router>
 

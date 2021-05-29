@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.scss'
-
+import { GrLocation } from 'react-icons/gr';
 
 const Home = () => {
     return (
@@ -9,6 +9,7 @@ const Home = () => {
 mamaun
            <h1>This Resido</h1>
            </span>
+          
         </div>
     );
 };
