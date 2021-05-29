@@ -1,0 +1,147 @@
+.ApartmentDetails {
+    background: #E5E5E5;
+    .apartmentInfo {
+        div {
+            .apartmentTitle {
+                font-size: 36px;
+                line-height: 50px;
+                font-weight: 700;
+                color: #275A53;
+            }
+            .price {
+                font-size: 36px;
+                line-height: 30px;
+                font-weight: 700;
+                color: #275A53;
+            }
+        }
+        .description {
+            font-size: 24px;
+            line-height: 44px;
+            font-weight: 400;
+        }
+    }
+    .priceInfo {
+        h3 {
+            font-size: 28px;
+            line-height: 42px;
+            color: #16322e;
+            font-weight: 700;
+        }
+        p {
+            font-size: 24px;
+        }
+    }
+    .propertyInfo {
+        h3 {
+            font-size: 28px;
+            line-height: 42px;
+            color: #16322e;
+            font-weight: 700;
+        }
+        p {
+            font-size: 24px;
+        }
+    }
+    .card {
+        .cardButton {
+            width: 100%;
+            border: none;
+            display: block;
+            padding: 0px 15px;
+            height: 50px;
+            background: hsl(172, 40%, 25%);
+            color: white;
+            font-weight: 700;
+            &:hover {
+                background: white;
+                color: black;
+                border: 1px solid black;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .ApartmentDetails {
+        
+        .apartmentInfo {
+            div {
+                .apartmentTitle {
+                    font-size: 20px;
+                    line-height: 40px;
+                    font-weight: 700;
+                    color: #275A53;
+                }
+                .price {
+                    font-size: 15px;
+                    line-height: 40px;
+                    font-weight: 700;
+                    color: #275A53;
+                }
+            }
+            .description {
+                font-size: 24px;
+                line-height: 44px;
+                font-weight: 400;
+            }
+        }
+  }
+}
+@media only screen and (min-width: 320px) {
+    .ApartmentDetails {
+        
+        .apartmentInfo {
+            div {
+                .apartmentTitle {
+                    font-size: 20px;
+                    line-height: 40px;
+                    font-weight: 700;
+                    color: #275A53;
+                }
+                .price {
+                    font-size: 15px;
+                    line-height: 40px;
+                    font-weight: 700;
+                    color: #275A53;
+                }
+            }
+            .description {
+                font-size: 24px;
+                line-height: 44px;
+                font-weight: 400;
+            }
+        }
+  }
+}
+@media only screen and (min-width: 768px) {
+    .ApartmentDetails {
+        
+        .apartmentInfo {
+            div {
+                .apartmentTitle {
+                    font-size: 25px;
+                }
+                .price {
+                    font-size: 20px;
+                }
+            }
+        }
+  }
+}
+@media only screen and (min-width: 1440px) {
+    .ApartmentDetails {
+        
+        .apartmentInfo {
+            div {
+                .apartmentTitle {
+                    font-size: 35px;
+                }
+                .price {
+                    font-size: 30px;
+                }
+            }
+        }
+  }
+}
