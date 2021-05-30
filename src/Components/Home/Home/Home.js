@@ -1,4 +1,5 @@
 import React from 'react';
+import Amenities from '../Amenities/Amenities';
 import Discover from '../Discover/Discover';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
@@ -14,6 +15,7 @@ const Home = () => {
             <Header/>
             <Discover/>
             <Testimonials/>
+            <Amenities/>
             <Service/>
             <Footer/>
         </div>

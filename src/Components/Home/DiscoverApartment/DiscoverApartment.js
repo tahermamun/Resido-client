@@ -7,7 +7,7 @@ const DiscoverApartment = ({apartment}) => {
     const {title, image, location, bedrooms, bathrooms, price} = apartment;
     return (
         <div className='col-md-4 DiscoverApartment mb-3'>
-            <div className="card h-100 border-0">
+            <div className="card h-100 border-0 shadow">
                 <div className='cardImage'>
                     <img className='w-100 h-100' src={image} alt="" />
                 </div>

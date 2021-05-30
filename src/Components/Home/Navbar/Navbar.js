@@ -1,11 +1,14 @@
 import React from 'react';
+import './Navbar.scss'
 import { Link } from 'react-router-dom';
-
+import logo from '../../../img/residoLogo.png'
 const Navbar = () => {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-darkLight">
             <div class="container fs-5">
-                <Link class="navbar-brand fw-bold" to="/">Navbar</Link>
+                <Link class="navbar-brand" to="/">
+                    <img src={logo} className="w-100" alt=""/>
+                </Link>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -13,11 +16,10 @@ const Navbar = () => {
                     <div class="navbar-nav ms-auto">
                         <Link class="nav-link active" aria-current="page" to="/">Home</Link>
                         <Link class="nav-link" to="/">About</Link>
-                        <Link class="nav-link" to="/">Service</Link>
-                        <Link class="nav-link" to="/">Concern</Link>
-                        <Link class="nav-link" to="/">Event</Link>
+                        <Link class="nav-link" to="#Service">Service</Link>
+                        <Link class="nav-link" to="/">Apartments</Link>
                         <Link class="nav-link" to="/">Contact</Link>
-                        <Link class="nav-link" to="/">Login</Link>
+                        <Link class="loginButton" to="/">Login</Link>
                     </div>
                 </div>
             </div>
