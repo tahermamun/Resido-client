@@ -22,13 +22,12 @@ const Charts = () => {
                 <HorizontalGridLines />
                 <XAxis />
                 <YAxis />
-                <LineSeries data={data} color='red' />
-                <LineSeries data={data} color='purple' />
-                <LineSeries data={data} color='yellow' />
+                <LineSeries data={data} color='#71b100' />
+                <LineSeries data={data} color='#71b100' />
+                <LineSeries data={data} color='#71B100' />
             </XYPlot>
 
         </div>
     );
 };
-
 export default Charts;

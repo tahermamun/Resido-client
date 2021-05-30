@@ -1,0 +1,8 @@
+.login-page{
+    background-image:   linear-gradient( rgba(17,17,17,0.7), rgba(17,17,17,0.7) ), url('../images/login.jpg');
+    background-size: cover;
+    height:600px;
+}
+.text-class{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

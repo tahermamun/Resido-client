@@ -50,6 +50,96 @@ body {
 .text-yellow {
     color: #a98921;
 }
+
+// Global Style
+
+.global-form {
+    margin: 20px;
+    background: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 20px;
+
+    &-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    &-input-label {
+        display: block;
+        margin: 5px 0 0 0;
+    }
+
+    &-input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: #e8e9e9;
+        line-height: 20px;
+        padding: 10px 15px;
+        margin: 5px 0;
+        color: #000000;
+        font-size: 15px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        letter-spacing: 0.7px;
+
+        &::placeholder {
+            color: #a3a3a3;
+        }
+        &:focus {
+            border-left: 5px solid rgb(70, 8, 243);
+        }
+    }
+}
+
+.dashboard-global-btn-container {
+    text-align: end;
+
+    .dashboard-global-btn {
+        background-color: rgba(10, 33, 240, 0.8);
+        color: #ffb242;
+        right: 0;
+        width: 150px;
+        border-radius: 8px;
+        text-align: center;
+        height: 42px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(251, 251, 251, 1);
+        }
+    }
+}
+
+.input-file-style {
+    margin-top: 4px;
+    background-color: #39d2b4;
+    text-align: center;
+    padding: 10px 15px;
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+
+    .input-file {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        cursor: pointer;
+        padding: 10px 15px;
+    }
+}
+
+
 .wrapper {
     display: grid;
     height: 100vh;
@@ -61,11 +151,33 @@ body {
 }
 
 @media only screen and(max-width: 978px) {
+=======
+@media only screen and(max-width: 778px) {
     .wrapper {
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 3fr;
         grid-template-areas:
             "nav"
             "main";
+    }
+
+    .global-form {
+        margin: 10px;
+        background: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+
+        &-container {
+            justify-self: center;
+            grid-template-columns: 1fr;
+            gap: 0px;
+            padding-bottom: 10px;
+        }
+    }
+
+    .dashboard-global-btn-container {
+        .dashboard-global-btn {
+            width: 100%;
+        }
     }
 }
