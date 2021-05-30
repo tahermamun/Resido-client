@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./DashboardProfile.scss"
 import pic from '../../../Image/Deshboard/avatar.png'
 import Charts from '../Charts/Charts';
+// Redux
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchManageRentHouse, fetchManageReview } from '../../../Redux'
 
 const DashboardProfile = () => {
+
+
+    
+    const rentHouses = useSelector(state => state.rentHouse.rentHouses)
+    const reviews = useSelector(state => state.review.reviews)
+    const dispatch = useDispatch()
+    console.log(rentHouses, 'ami rent')
+    useEffect(() => {
+        dispatch(fetchManageRentHouse())
+        dispatch(fetchManageReview())
+    }, [])
+
+
+
 
     return (
         <div className='main__container'>
@@ -20,22 +37,22 @@ const DashboardProfile = () => {
                     <i className='fas fa-hotel fa-2x text-lightblue'></i>
                     <div className='card_inner'>
                         <p className='text-primary-p'>Number of House</p>
+                        <span className='font-bold text-title'>{rentHouses.length}</span>
+                    </div>
+                </div>
+
+                <div className='card'>
+                    <i className='fas fa-cart-arrow-down fa-2x text-red'></i>
+                    <div className='card_inner'>
+                        <p className='text-primary-p'>Time of Orders</p>
                         <span className='font-bold text-title'>578</span>
                     </div>
                 </div>
 
                 <div className='card'>
-                    <i className='fas fa-bed fa-2x text-lightblue'></i>
+                    <i className='fas fa-user fa-2x text-yellow'></i>
                     <div className='card_inner'>
-                        <p className='text-primary-p'>Time of bedrooms</p>
-                        <span className='font-bold text-title'>578</span>
-                    </div>
-                </div>
-
-                <div className='card'>
-                    <i className='fas fa-bath fa-2x text-yellow'></i>
-                    <div className='card_inner'>
-                        <p className='text-primary-p'>Number of bathrooms</p>
+                        <p className='text-primary-p'>Number of User</p>
                         <span className='font-bold text-title'>578</span>
                     </div>
                 </div>
