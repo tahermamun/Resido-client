@@ -2,11 +2,10 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import './AddRentHouse.scss'
 
+
 const AddRentHouse = () => {
     const [rentHouse, setRentHouse] = useState({})
     const [imageURL, setImageURL] = useState(null)
-
-
 
     const handleBlur = e => {
         const newRentHouse = { ...rentHouse }
@@ -15,13 +14,12 @@ const AddRentHouse = () => {
     }
     console.log(rentHouse)
 
-
+    
     const handleFileChange = (event) => {
         console.log(event.target.files)
         const imageData = new FormData()
         imageData.set('key', '59b9f92bf1b5d3036dd00cceba773135')
         imageData.append('image', event.target.files[0])
-
         axios.post('https://api.imgbb.com/1/upload', imageData)
             .then(function (response) {
                 setImageURL(response.data.data.display_url);
@@ -46,8 +44,6 @@ const AddRentHouse = () => {
         }).then(res => {
             console.log(res, 'ami')
         })
-
-
         e.preventDefault();
         e.target.reset();
     }
@@ -56,7 +52,6 @@ const AddRentHouse = () => {
     return (
         <div>
             <form onSubmit={handleSubmit} className='global-form' action="">
-
                 <div className='global-form-container'>
                     <div>
                         <label className='global-form-input-label' for="house-title">House Title</label>
@@ -91,9 +86,6 @@ const AddRentHouse = () => {
                     <button type="submit" className="dashboard-global-btn">Submit</button>
                 </div>
             </form>
-
-
-
         </div>
     );
 };
