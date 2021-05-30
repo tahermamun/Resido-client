@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../Header/Header';
-import apartment from '../../../img/Rectangle 394.png'
-import './ApartmentDetails.scss'
+// import apartment from '../../../img/Rectangle 394.png';
+import './ApartmentDetails.scss';
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 
 const ApartmentDetails = () => {
+    const [apartment, setApartment] = useState({}) 
+    const { rentHouseId } = useParams()
+    const rentHouses = useSelector(state => state.rentHouse.rentHouses)
+    const house = rentHouses.filter(hs => hs._id === rentHouseId )
+    
+    useEffect(()=> setApartment(...house), [house])
+    console.log(apartment)
     return (
         <section className="ApartmentDetails">
             <Header />
@@ -11,12 +20,12 @@ const ApartmentDetails = () => {
                 <div className="row">
                     <div className="col-md-8 col-sm-6">
                         <div className="imageBox">
-                            <img className="w-100" src={apartment} alt="" />
+                            <img className="w-100" src={apartment.imageURL} alt="" />
                         </div>
                         <div className="apartmentInfo">
                             <div className='d-flex justify-content-between mt-3 py-1'>
-                                <h3 className='apartmentTitle'>Family Apartment Three</h3>
-                                <p className="d-inline-block price">$256</p>
+                                <h3 className='apartmentTitle'>{apartment.houseTitle}</h3>
+                                <p className="d-inline-block price">${apartment.price}</p>
                             </div>
                             <p className='description'>
                                 3000 sq-ft., 3 Bedroom, Semi-furnished, Luxurious, South facing Apartment for Rent in Rangs Malancha, Melbourne.
@@ -46,13 +55,13 @@ const ApartmentDetails = () => {
                         <div className="card p-3" style={{ background: '#F4F4F4' }}>
                             <form className='pt-3'>
                                 <div className="mb-3">
-                                    <input placeholder="Full Name" type="text" className="form-control"/>
+                                    <input placeholder="Full Name" type="text" className="form-control" />
                                 </div>
                                 <div className="mb-3">
-                                    <input placeholder="Phone NO" type="text" className="form-control"/>
+                                    <input placeholder="Phone NO" type="text" className="form-control" />
                                 </div>
                                 <div className="mb-3">
-                                    <input placeholder="Email Address" type="text" className="form-control"/>
+                                    <input placeholder="Email Address" type="text" className="form-control" />
                                 </div>
                                 <div className="mb-3">
                                     <textarea placeholder="Massage" cols="30" rows="5" className='form-control'></textarea>
