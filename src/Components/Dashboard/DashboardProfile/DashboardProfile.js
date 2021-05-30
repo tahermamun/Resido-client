@@ -17,7 +17,7 @@ const DashboardProfile = () => {
             <div className="main__cards">
 
                 <div className='card'>
-                    <i className='fa fa-user-o fa-2x text-lightblue'></i>
+                    <i className='fas fa-hotel fa-2x text-lightblue'></i>
                     <div className='card_inner'>
                         <p className='text-primary-p'>Number of House</p>
                         <span className='font-bold text-title'>578</span>
@@ -25,7 +25,7 @@ const DashboardProfile = () => {
                 </div>
 
                 <div className='card'>
-                    <i className='fa fa-calender fa-2x text-lightblue'></i>
+                    <i className='fas fa-bed fa-2x text-lightblue'></i>
                     <div className='card_inner'>
                         <p className='text-primary-p'>Time of bedrooms</p>
                         <span className='font-bold text-title'>578</span>
@@ -33,7 +33,7 @@ const DashboardProfile = () => {
                 </div>
 
                 <div className='card'>
-                    <i className='fa fa-user fa-2x text-yellow'></i>
+                    <i className='fas fa-bath fa-2x text-yellow'></i>
                     <div className='card_inner'>
                         <p className='text-primary-p'>Number of bathrooms</p>
                         <span className='font-bold text-title'>578</span>
@@ -41,9 +41,9 @@ const DashboardProfile = () => {
                 </div>
 
                 <div className='card'>
-                    <i className='fa fa-thumbs-up fa-2x text-green'></i>
+                    <i className='fas fa-star fa-2x text-green'></i>
                     <div className='card_inner'>
-                        <p className='text-primary-p'>Number of customer</p>
+                        <p className='text-primary-p'>Number of Reviews</p>
                         <span className='font-bold text-title'>578</span>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ const DashboardProfile = () => {
                             <h1>State Report</h1>
                             <p>Sylhet, Bangladesh</p>
                         </div>
-                        <i className='fa fa-use'></i>
+                        <i className='fa fa-usd'></i>
                     </div>
 
                     <div className="charts__right__cards">
