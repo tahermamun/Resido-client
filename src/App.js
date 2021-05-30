@@ -29,6 +29,10 @@ const App = () => {
             <Navbar />
             <ApartmentDetails />
           </Route>
+          <Route path='/apartmentDetails/:rentHouseId'>
+            <Navbar />
+            <ApartmentDetails />
+          </Route>
           <Route path='/dashboard/:panel'>
             <Dashboard></Dashboard>
           </Route>

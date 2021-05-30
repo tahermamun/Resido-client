@@ -3,10 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import './ManageRentHouse.scss';
 import { fetchManageRentHouse, fetchManageReview } from '../../../Redux'
 
-
 import { fetchUsers } from '../../../Redux'
-
-
 
 const ManageRentHouse = () => {
 
@@ -21,9 +18,7 @@ const ManageRentHouse = () => {
     useEffect(() => {
         dispatch(fetchManageRentHouse())
         dispatch(fetchManageReview())
-
-
-    }, [])
+    }, [dispatch])
 
 
     return (
