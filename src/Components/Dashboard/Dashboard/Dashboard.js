@@ -15,7 +15,7 @@ const Dashboard = () => {
         setSidebarOpen(false)
     }
     return (
-        <div className='container'>
+        <div className='wrapper'>
             <Navbar openSidebar={openSidebar} sidebarOpen={sidebarOpen}></Navbar>
             <Main></Main>
             <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar}></Sidebar>
