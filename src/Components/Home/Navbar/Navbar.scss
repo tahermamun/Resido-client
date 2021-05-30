@@ -1,0 +1,27 @@
+.navbar {
+    background:#F4F9FD;
+    .loginButton {
+       height: 50px;
+       width: 100px;
+       line-height: 25px;
+       background-color: #0F1B4C;
+       color: white;
+       padding: 10px 20px;
+       text-decoration: none;
+       border-radius: 5px;
+       text-align: center;
+       display: inline-block;
+    }
+    .nav-link {
+        color:  #272626 !important;
+        padding: 15 0px;
+        margin-right: 10px;
+    }
+    .navbar-brand {
+        width: 130px;
+        line-height: 25px;
+        img {
+
+        }
+    }
+}
