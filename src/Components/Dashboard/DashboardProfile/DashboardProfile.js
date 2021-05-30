@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./DashboardProfile.scss"
 import pic from '../../../Image/Deshboard/avatar.png'
 import Charts from '../Charts/Charts';
+// Redux
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchManageRentHouse, fetchManageReview } from '../../../Redux'
 
 const DashboardProfile = () => {
+
+
+    
+    const rentHouses = useSelector(state => state.rentHouse.rentHouses)
+    const reviews = useSelector(state => state.review.reviews)
+    const dispatch = useDispatch()
+    console.log(rentHouses, 'ami rent')
+    useEffect(() => {
+        dispatch(fetchManageRentHouse())
+        dispatch(fetchManageReview())
+    }, [])
+
+
+
 
     return (
         <div className='main__container'>
@@ -17,33 +34,33 @@ const DashboardProfile = () => {
             <div className="main__cards">
 
                 <div className='card'>
-                    <i className='fa fa-user-o fa-2x text-lightblue'></i>
+                    <i className='fas fa-hotel fa-2x text-lightblue'></i>
                     <div className='card_inner'>
                         <p className='text-primary-p'>Number of House</p>
+                        <span className='font-bold text-title'>{rentHouses.length}</span>
+                    </div>
+                </div>
+
+                <div className='card'>
+                    <i className='fas fa-cart-arrow-down fa-2x text-red'></i>
+                    <div className='card_inner'>
+                        <p className='text-primary-p'>Time of Orders</p>
                         <span className='font-bold text-title'>578</span>
                     </div>
                 </div>
 
                 <div className='card'>
-                    <i className='fa fa-calender fa-2x text-lightblue'></i>
+                    <i className='fas fa-user fa-2x text-yellow'></i>
                     <div className='card_inner'>
-                        <p className='text-primary-p'>Time of bedrooms</p>
+                        <p className='text-primary-p'>Number of User</p>
                         <span className='font-bold text-title'>578</span>
                     </div>
                 </div>
 
                 <div className='card'>
-                    <i className='fa fa-user fa-2x text-yellow'></i>
+                    <i className='fas fa-star fa-2x text-green'></i>
                     <div className='card_inner'>
-                        <p className='text-primary-p'>Number of bathrooms</p>
-                        <span className='font-bold text-title'>578</span>
-                    </div>
-                </div>
-
-                <div className='card'>
-                    <i className='fa fa-thumbs-up fa-2x text-green'></i>
-                    <div className='card_inner'>
-                        <p className='text-primary-p'>Number of customer</p>
+                        <p className='text-primary-p'>Number of Reviews</p>
                         <span className='font-bold text-title'>578</span>
                     </div>
                 </div>
@@ -66,7 +83,7 @@ const DashboardProfile = () => {
                             <h1>State Report</h1>
                             <p>Sylhet, Bangladesh</p>
                         </div>
-                        <i className='fa fa-use'></i>
+                        <i className='fa fa-usd'></i>
                     </div>
 
                     <div className="charts__right__cards">

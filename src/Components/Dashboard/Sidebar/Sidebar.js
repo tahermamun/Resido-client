@@ -2,19 +2,13 @@ import React from 'react';
 import './Sidebar.scss'
 import logo from '../../../Image/logo1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faSearch, faPlus, faTimes, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faSearch, faPlus, faTimes, faHome, faSwatchbook } from '@fortawesome/free-solid-svg-icons'
 import { NavLink, useParams } from 'react-router-dom';
-
-
 
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
     let { panel} = useParams()
-
-
-
-
 
     return (
         <div className={sidebarOpen ? 'sidebar-responsive' : ''} id='dashboard-sidebar'>
@@ -32,6 +26,14 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                 <NavLink to="/dashboard/addRentHouse" className={panel==='addRentHouse'? 'sidebar-active sidebar-link': 'sidebar-link'}>
                     <FontAwesomeIcon className='fa fa-times sidebar-link-icon' icon={faPlus} />
                     <span>Add Rent House</span>
+                </NavLink>
+                <NavLink to="/dashboard/manageRentHouse" className={panel==='manageRentHouse'? 'sidebar-active sidebar-link': 'sidebar-link'}>
+                    <FontAwesomeIcon className='fa fa-times sidebar-link-icon' icon={faSwatchbook} />
+                    <span>Manage Houses</span>
+                </NavLink>
+                <NavLink to="/dashboard/addReview" className={panel==='addReview'? 'sidebar-active sidebar-link': 'sidebar-link'}>
+                    <FontAwesomeIcon className='fa fa-times sidebar-link-icon' icon={faSwatchbook} />
+                    <span>Add Review</span>
                 </NavLink>
 
 
