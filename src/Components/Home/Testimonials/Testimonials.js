@@ -1,42 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { fetchManageReview } from '../../../Redux';
 import Testimonial from '../Testimonial/Testimonial';
 import './Testimonials.scss'
 
-const testimonial = [
-    {
-        img: '',
-        name: "Shamonti Hasan",
-        proffesion: 'General Manger',
-        review: "Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam."
-    },
-    {
-        img: '',
-        name: "Shamonti Hasan",
-        proffesion: 'General Manger',
-        review: "Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam."
-    },
-    {
-        img: '',
-        name: "Shamonti Hasan",
-        proffesion: 'General Manger',
-        review: "Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam."
-    },
-    {
-        img: '',
-        name: "Shamonti Hasan",
-        proffesion: 'General Manger',
-        review: "Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam."
-    },
-    {
-        img: '',
-        name: "Shamonti Hasan",
-        proffesion: 'General Manger',
-        review: "Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam."
-    },
-]
 const Testimonials = () => {
+    const dispatch = useDispatch();
+    useEffect(() => dispatch(fetchManageReview()) , [dispatch])
+    const reviews = useSelector(state => state.review.reviews)
+    console.log(reviews)
+
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -65,7 +41,7 @@ const Testimonials = () => {
                 </div>
                 <Carousel responsive={responsive}>
                     {
-                        testimonial.map(ts => <Testimonial ts={ts} />)
+                        reviews.map(ts => <Testimonial ts={ts} />)
                     }
                 </Carousel>
             </div>

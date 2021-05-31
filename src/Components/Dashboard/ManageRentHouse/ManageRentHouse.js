@@ -3,6 +3,9 @@ import './ManageRentHouse.scss';
 // Redux
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchManageRentHouse, fetchManageReview } from '../../../Redux'
+
+import { fetchUsers } from '../../../Redux'
+
 import ManageRentHouseData from '../ManageRentHouseData/ManageRentHouseData';
 
 
@@ -15,7 +18,8 @@ const ManageRentHouse = () => {
     useEffect(() => {
         dispatch(fetchManageRentHouse())
         dispatch(fetchManageReview())
-    }, [])
+
+    }, [dispatch])
 
     return (
         <div>

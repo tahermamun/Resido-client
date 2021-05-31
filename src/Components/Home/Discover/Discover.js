@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Discover.scss';
-import fakeData from '../../../fakeData/fakeData.json'
 import DiscoverApartment from '../DiscoverApartment/DiscoverApartment';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { fetchManageRentHouse } from '../../../Redux';
 const Discover = () => {
+    const dispatch = useDispatch()
+    useEffect(() => dispatch(fetchManageRentHouse()), [dispatch])
+    const rentHouses = useSelector(state => state.rentHouse.rentHouses)
     return (
         <section className='Discover' id='Discover'>
             <div className="container my-3">
@@ -12,7 +17,7 @@ const Discover = () => {
                 </div>
                 <div className="row py-5">
                     {
-                        fakeData.map(apartment => <DiscoverApartment key={apartment.title} apartment={apartment} />)
+                        rentHouses.map(apartment => <DiscoverApartment key={apartment._id} apartment={apartment} />)
                     }
                 </div>
             </div>
