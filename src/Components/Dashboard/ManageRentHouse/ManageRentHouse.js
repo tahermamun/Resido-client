@@ -20,7 +20,6 @@ const ManageRentHouse = () => {
         dispatch(fetchManageReview())
 
     }, [dispatch])
-    }, [])
 
     return (
         <div>
