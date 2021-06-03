@@ -36,7 +36,7 @@ const Testimonials = () => {
         <section className="Testimonials" id="Testimonials">
             <div className="container pb-5">
                 <div className="TestimonialsHeader text-center mb-4">
-                    <h2 class="title fw-bold">Testimonial</h2>
+                    <h2 class="fw-bold">Testimonial</h2>
                     <h2 class="sub-title">Some Reviews</h2>
                 </div>
                 <Carousel responsive={responsive}>
