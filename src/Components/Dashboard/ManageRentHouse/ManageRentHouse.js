@@ -19,7 +19,10 @@ const ManageRentHouse = () => {
         dispatch(fetchManageReview())
 
     }, [dispatch])
+<<<<<<< HEAD
     
+=======
+>>>>>>> df32e750f9cf120d71697396c996b13e8db18004
 
     return (
         <div>
