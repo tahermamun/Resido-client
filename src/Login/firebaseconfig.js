@@ -1,10 +1,11 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDyx5XuEEiMZY9dXosZv5EXf3kgRvVyy9A",
-    authDomain: "happy-baby-my.firebaseapp.com",
-    projectId: "happy-baby-my",
-    storageBucket: "happy-baby-my.appspot.com",
-    messagingSenderId: "1071340962700",
-    appId: "1:1071340962700:web:79e96f73d3a80ed13f4ca9"
-  };
+  apiKey: "AIzaSyAI9J_v-jeLc7aXBk_ryCkKORB9vhzajac",
+  authDomain: "resido-8a145.firebaseapp.com",
+  projectId: "resido-8a145",
+  storageBucket: "resido-8a145.appspot.com",
+  messagingSenderId: "269900529443",
+  appId: "1:269900529443:web:ba9424f6cf6a002f2ed696",
+  measurementId: "G-Q8JVQ3Y5T3"
+};
 
-  export default firebaseConfig;
+export default firebaseConfig;

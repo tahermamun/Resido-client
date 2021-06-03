@@ -15,14 +15,21 @@
         font-weight: bolder;
 
         .find {
-            color: #3fb9be;
+            color: #100197;
             font-style: italic;
             font-weight: lighter;
         }
+.headerMainTitle{
+    line-height: 40px;
+}
+
+
+
+
         button {
             text-transform: uppercase;
             border: none;
-            background-color: #3fb9be;
+            background-color: #71B100;
             padding: 10px 15px;
             font-size: 10px;
             color: white;

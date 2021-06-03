@@ -15,11 +15,10 @@ const Navbar = () => {
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
                         <Link class="nav-link active" aria-current="page" to="/">Home</Link>
-                        <Link class="nav-link" to="/">About</Link>
-                        <Link class="nav-link" to="#Service">Service</Link>
                         <Link class="nav-link" to="/">Apartments</Link>
                         <Link class="nav-link" to="/">Contact</Link>
-                        <Link class="loginButton" to="/">Login</Link>
+                        <Link class="nav-link" to="/dashboard/dashboardProfile">Dashboard</Link>
+                        <Link class="loginButton" to="/login">Login</Link>
                     </div>
                 </div>
             </div>

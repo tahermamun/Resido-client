@@ -8,7 +8,7 @@ const HeaderMain = () => {
             <div className='container '>
                 <div className="headerBox  text-light text-center">
                     <p className='find'>Find the Best</p>
-                    <h2 className='text-uppercase'>Modern Apartment In <br/> A New Residential Complex</h2>
+                    <h2 className='text-uppercase headerMainTitle fs-2'>Modern Apartment In <br/> A New Residential Complex</h2>
                     <button>Learn More</button>
                     <a href="#Discover" className="d-block HeaderLink">Explore<br /> <CgArrowLongDown className='mt-2 fs-3' /></a>
                 </div>
